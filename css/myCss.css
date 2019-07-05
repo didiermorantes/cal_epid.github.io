@@ -1,0 +1,82 @@
+div.mes {
+  margin: 0 auto;
+  width: 250px;
+  position: relative;
+  caption-side: top;
+}
+
+/*
+Desplazar de izquierda a derecha el calendario si se generó dentro de un div
+*/
+div.mes:nth-child(odd) {
+  right: 50px;
+}
+
+div.mes:nth-child(even) {
+  left: 50px;
+}
+/* desplazar de izquierda a derecha el calendario */
+
+
+div.mes th,
+div.mes td,
+div.mes caption {
+    /* cambiamos el caption-side a top, pues bootstrap lo trae bottom */
+  caption-side: inherit;
+  font: normal 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 6px 4px;
+  text-align: center;
+}
+
+.tabla_mes caption{
+   /* cambiamos el caption-side a top, pues bootstrap lo trae bottom */
+  caption-side: top;
+
+}  
+  
+
+
+.tabla_mes {
+  border-spacing: 3px;
+  empty-cells: hide;
+
+ /* border: red 5px solid; */
+}
+
+/** CENTRAMOS LA TABLA GENERAL QUE CONTIENE TODAS LAS SUBTABLAS DE MESES **/
+#calendario_epidemiologico {
+  caption-side: top;
+  border-collapse: separate;
+  border-spacing: 3px;
+ 
+  empty-cells: hide;
+  /*esta es la instrucción que centra. Si la quita, todo queda a la izquierda **/
+  margin: auto;
+
+  /* border: red 5px solid; */
+
+}
+
+div.mes td {
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+div.mes th {
+  color: #CD5C5C;
+}
+
+div.mes caption.titulo {
+  text-align: left;
+  font-size: 20px;
+  color: #c00;
+
+}
+}
+
+.tituloAno {
+  text-align: center;
+  font-size: 40px;
+  color: #c00;
+}
+

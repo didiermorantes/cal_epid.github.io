@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    					<!-- INICIO CONTENIDO -->
+                        <div class="m-content">
+
+                            <main>
+    
+    
+    
+    
+    
+        <div class="container"> <!--contenedor principal del formulario -->
+    
+            <form>
+    
+                <!-- linea vacia separación de bordes -->	
+                <div class="form-row">
+                    <div class="form-group col-sm-12"></div>
+                </div>
+    
+                <!--linea 0 -->
+                <div class="container" style="border-radius: 25px; border: 2px solid #696969;"><!-- contenedor del primer grupo -->
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <p class="form-control-static" align="center">INFORMACI&Oacute;N GENERAL</p>
+                        </div>
+    
+                    </div>
+
+    
+    <!-- --------------------------------------------------------------ZONA DE PRUEBAS ---------------------------------------------------------------------------------------------- -->
+                    
+    
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+               
+    <!-- MOSTRAMOS EL CONTENIDO DEL MODELO VUE   --  -->
+                            <pre>{{ $data}}</pre>
+    
+    
+                        </div>
+                    
+                    <!-- fin de la primera linea que muestra codigo y nombre del evento -->
+    <!-- linea 2 -->
+                    <div class="form-row">
+                        <!--Elemento 3 -->
+                        <div class="form-group col-sm-6" >
+                            <label for="fecha_notificacion" data-toggle="tooltip" data-placement="top" title="" data-original-title="Fecha de notificación del Evento Colectivo" >Fecha Notificaci&oacute;n</label>
+                            <input type="date" class="form-control"  id="fecha_notificacion" placeholder="Fecha del evento notificado" value="dd/mm/aaaa" v-model="fecha_notificacion" v-on:change="calcularFecha"
+                            data-container="body" data-toggle="popover" data-placement="top" data-content="Por favor utilice los controles del campo para seleccionar la fecha de notificación, o escríbala en formato dd/mm/aaaa" data-original-title="">
+                        </div>
+                        <!--Elemento 4 -->
+                        <div class="form-group col-sm-2">
+                            <label for="nombre_evento" data-toggle="tooltip" data-placement="top" title="" data-original-title="Año de notificación del Evento Colectivo">Año Actual</label>
+                            <input type="text" class="form-control m-input m-input--solid" id="ano_evento" placeholder="Año epidemiológico" v-model="ano_actual" readonly
+                            data-container="body" data-toggle="popover" data-placement="top" data-content="El año depende de la fecha seleccionada. Por favor seleccione una fecha del evento para desplegar la información del campo año." data-original-title="Campo bloqueado" >
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="nombre_evento" data-toggle="tooltip" data-placement="top" title="" data-original-title="Año de notificación del Evento Colectivo">Semana Actual</label>
+                            <input type="text" class="form-control m-input m-input--solid" id="semana_evento" placeholder="Año epidemiológico" v-model="semana_actual" readonly
+                            data-container="body" data-toggle="popover" data-placement="top" data-content="El año depende de la fecha seleccionada. Por favor seleccione una fecha del evento para desplegar la información del campo año." data-original-title="Campo bloqueado" >
+                        </div>
+                    </div>
+
+                     <!-- linea 2 -->
+                    <div class="form-row">
+                        <!--Elemento 3 -->
+
+                        <!--Elemento 4 -->
+                        <div class="form-group col-sm-6">
+                            <label for="nombre_evento" data-toggle="tooltip" data-placement="top" title="" data-original-title="Año de notificación del Evento Colectivo">Año Seleccionado</label>
+                            <input type="text" class="form-control m-input m-input--solid" id="ano_selec" placeholder="Año Seleccionado" v-model="ano_selec" readonly
+                            data-container="body" data-toggle="popover" data-placement="top" data-content="El año depende de la fecha seleccionada. Por favor seleccione una fecha del evento para desplegar la información del campo año." data-original-title="Campo bloqueado" >
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="nombre_evento" data-toggle="tooltip" data-placement="top" title="" data-original-title="Año de notificación del Evento Colectivo">Semana Seleccionada</label>
+                            <input type="text" class="form-control m-input m-input--solid" id="semana_selec" placeholder="Semana Seleccionada" v-model="semana_selec" readonly
+                            data-container="body" data-toggle="popover" data-placement="top" data-content="El año depende de la fecha seleccionada. Por favor seleccione una fecha del evento para desplegar la información del campo año." data-original-title="Campo bloqueado" >
+                        </div>
+                    </div>
+
+                                         <!-- linea 2 -->
+                                         <div class="form-row">
+                                            <!--Elemento 3 -->
+                    
+                                            <!--Elemento 4 -->
+                                            <div class="form-group col-sm-6">
+                                                <label for="nombre_evento" data-toggle="tooltip" data-placement="top" title="" data-original-title="Año de notificación del Evento Colectivo">Año Epidemiologico</label>
+                                                <input type="text" class="form-control m-input m-input--solid" id="ano_epid" placeholder="Año epidemiológico" v-model="ano_epid" readonly
+                                                data-container="body" data-toggle="popover" data-placement="top" data-content="El año depende de la fecha seleccionada. Por favor seleccione una fecha del evento para desplegar la información del campo año." data-original-title="Campo bloqueado" >
+                                            </div>
+                                            <div class="form-group col-sm-6">
+                                                <label for="nombre_evento" data-toggle="tooltip" data-placement="top" title="" data-original-title="Año de notificación del Evento Colectivo">Semana Epidemiologica</label>
+                                                <input type="text" class="form-control m-input m-input--solid" id="semana_epid" placeholder="Semana epidemiológica" v-model="semana_epid" readonly
+                                                data-container="body" data-toggle="popover" data-placement="top" data-content="El año depende de la fecha seleccionada. Por favor seleccione una fecha del evento para desplegar la información del campo año." data-original-title="Campo bloqueado" >
+                                            </div>
+                                        </div>
+
+          </form>
+          </div>
+          </main>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+          <!-- modelo del vue -->
+          <script src="js/main.js"></script>
+          <!-- mis scripts-->
+          <script src="js/myJs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
