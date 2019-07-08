@@ -46,7 +46,7 @@ self.addEventListener('activate',e=>{
         caches.keys()
         .then(cachesNames=>{
 
-            cacheNames.map(cacheName=>{
+            cachesNames.map(cacheName=>{
                 //eliminamos lo que ya no se necesita en el cache
                 if(cacheWhiteList.indexOf(cacheName)=== -1){
                     return caches.delete(cacheName)
