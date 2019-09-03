@@ -136,7 +136,7 @@ let tabla_general = document.createElement("table");
 
     //Mes
     let mes = document.createElement("div");
-    mes.className = "mes col-sm-6 style='width:100%; height:auto; background-image: url(img/logo-ins_blanco_negro.jpg); background-repeat: no-repeat;  background-position: center; position: relative;'";
+    mes.className = "mes col-sm-6 style='width:100%; height:auto; background-image: url(img/logo-ins_blanco_negro_125.jpg); background-repeat: no-repeat;  background-position: center; position: relative;'";
     document.body.appendChild(mes);
     //Tabla
     let tabla_mes = document.createElement("table");
