@@ -152,7 +152,8 @@ let tabla_general = document.createElement("table");
    // mes.appendChild(tabla_mes);
 
             //unimos a la tabla general la tabla de cada mes generado (SI SE QUIERE DESCARGAR EL EXCEL PERO NO VISUALIZAR BIEN)
-            tabla_general.appendChild(tabla_mes);
+           // tabla_general.appendChild(tabla_mes);
+           mes.appendChild(tabla_mes);
 
     //Título
     let titulo = document.createElement("caption");
