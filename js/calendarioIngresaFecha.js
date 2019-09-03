@@ -108,7 +108,7 @@ let cajaEncabezado = document.createElement("div");
 //agregamos caracteristicas de clase al div
 cajaEncabezado.className="cajaEncabezado col-sm-3";
 //añadimos al body el div
-document.body.apppendChild(cajaEncabezado);
+document.body.appendChild(cajaEncabezado);
 
 
                /* CREAMOS UN ELEMENTO DE IMAGEN PARA EL ENCABEZADO */
