@@ -153,7 +153,7 @@ cajaEncabezadoContenedor.appendChild(cajaEncabezado1);
                //establecemos la clase de la imagen
                imagenEncabezado1.className="img-fluid";
                //agregamos dimensiones de la imagen
-               imagenEncabezado1.style="height:130px";
+               imagenEncabezado1.style="height:200px";
                //agregamos la imagen al encabezado
                cajaEncabezado1.appendChild(imagenEncabezado1);
 
@@ -169,9 +169,10 @@ cajaEncabezado2.style="display: flex; justify-content: center; align-items: cent
    
                                  /* CREAMOS UN ELEMENTO DE TEXTO */
 
-                                 let texto2 = document.createElement("h2");
+                                 let texto2 = document.createElement("h3");
                                  //Establecemos el texto interno del parrafo
-                                 texto2.innerText="Calendario Epidemiológico Instituto Nacional de Salud";
+                                 texto2.innerText="Calendario Epidemiológico Año ";
+                                 texto2.innerText=anoStorage;
                                  //agregamos el texto al encabezado
                                  cajaEncabezado2.appendChild(texto2);
 
