@@ -142,7 +142,7 @@ let tabla_general = document.createElement("table");
 
 
 //AGREGAMOS AL DIV GENERAL LA TABLA GENERAL??
-div_general.appendChild(tabla_general);
+//div_general.appendChild(tabla_general);
 
   for (m = 0; m <= 11; m++) {
 //Se genera una tabla por cada més
