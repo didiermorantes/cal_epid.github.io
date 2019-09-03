@@ -140,6 +140,8 @@ div_general.appendChild(cajaEncabezadoContenedor);
 let cajaEncabezado1 = document.createElement("div");
 //agregamos caracteristicas de clase al div
 cajaEncabezado1.className="col-sm-4";
+//agregamos caracteristicas de estilo al div
+cajaEncabezado1.style="text-align:center;"
 //añadimos al div contenedor el div del encabezado
 cajaEncabezadoContenedor.appendChild(cajaEncabezado1);
 
@@ -160,6 +162,8 @@ cajaEncabezadoContenedor.appendChild(cajaEncabezado1);
    let cajaEncabezado2 = document.createElement("div");
    //agregamos caracteristicas de clase al div
    cajaEncabezado2.className="col-sm-4";
+   //agregamos caracteristicas de estilo al div
+cajaEncabezado2.style="text-align:center;"
    //añadimos al div contenedor el div del encabezado
    cajaEncabezadoContenedor.appendChild(cajaEncabezado2);
    
@@ -179,6 +183,8 @@ cajaEncabezadoContenedor.appendChild(cajaEncabezado1);
 let cajaEncabezado3 = document.createElement("div");
 //agregamos caracteristicas de clase al div
 cajaEncabezado3.className="col-sm-4";
+//agregamos caracteristicas de estilo al div
+cajaEncabezado3.style="text-align:center;"
 //añadimos al div contenedor el div del encabezado
 cajaEncabezadoContenedor.appendChild(cajaEncabezado3);
 
