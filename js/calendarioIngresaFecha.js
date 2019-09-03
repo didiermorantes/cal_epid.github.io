@@ -227,7 +227,7 @@ let tabla_general = document.createElement("table");
     //Mes
     let mes = document.createElement("div");
     mes.className = "mes col-sm-6";
-    mes.style="height:auto; background-image: url('img/logo_ins_trans_200px.png'); background-repeat: no-repeat;  background-position:right center; position: relative;";
+    mes.style="height:auto; background-image: url('img/logo_ins_trans_200px_2.png'); background-repeat: no-repeat;  background-position:right center; position: relative;";
     document.body.appendChild(mes);
     //Tabla
     let tabla_mes = document.createElement("table");
