@@ -150,7 +150,7 @@ let tabla_general = document.createElement("table");
     //Mes
     let mes = document.createElement("div");
     mes.className = "mes col-sm-6";
-    mes.style="height:auto;background-color:lightblue; background-image: url('img/logo_ins_200px.png'); background-repeat: no-repeat;  background-position:center center; position: relative;  opacity: 0.1; filter: alpha(opacity=10);";
+    mes.style="height:auto;background-color:lightblue; background-image: url('img/logo_ins_200px.png'); background-repeat: no-repeat;  background-position:center center; position: relative;";
     document.body.appendChild(mes);
     //Tabla
     let tabla_mes = document.createElement("table");
@@ -167,6 +167,7 @@ let tabla_general = document.createElement("table");
                /* CREAMOS UN ELEMENTO DE IMAGEN */
                let imagen = document.createElement("img");
                imagen.src="/img/logo-ins_blanco_negro_125.jpg";
+               imagen.style="opacity: 0.1; filter: alpha(opacity=10);";
                mes.appendChild(imagen);
                
               /*CREAMOS UN TEXTO PARA QUE SALGA EL FONDO
