@@ -130,6 +130,7 @@ document.body.appendChild(tituloCalendario);
 let cajaEncabezadoContenedor = document.createElement("div");
 //agregamos caracteristicas de clase al div
 cajaEncabezadoContenedor.className="row";
+cajaEncabezadoContenedor.style="height:130px";
 //añadimos al div general el div container
 div_general.appendChild(cajaEncabezadoContenedor);
 
