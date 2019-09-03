@@ -139,9 +139,9 @@ div_general.appendChild(cajaEncabezadoContenedor);
 //creamos un div para los logos del encabezado
 let cajaEncabezado1 = document.createElement("div");
 //agregamos caracteristicas de clase al div
-cajaEncabezado1.className="col-sm-4";
+cajaEncabezado1.className="flex-container col-sm-4";
 //agregamos caracteristicas de estilo al div
-cajaEncabezado1.style="text-align:center;"
+cajaEncabezado1.style="display: flex; justify-content: center; align-items: center;"
 //añadimos al div contenedor el div del encabezado
 cajaEncabezadoContenedor.appendChild(cajaEncabezado1);
 
@@ -161,9 +161,9 @@ cajaEncabezadoContenedor.appendChild(cajaEncabezado1);
    //creamos un div para los logos del encabezado
    let cajaEncabezado2 = document.createElement("div");
    //agregamos caracteristicas de clase al div
-   cajaEncabezado2.className="col-sm-4";
+   cajaEncabezado2.className="flex-container col-sm-4";
    //agregamos caracteristicas de estilo al div
-cajaEncabezado2.style="text-align:center;"
+cajaEncabezado2.style="display: flex; justify-content: center; align-items: center;"
    //añadimos al div contenedor el div del encabezado
    cajaEncabezadoContenedor.appendChild(cajaEncabezado2);
    
@@ -182,9 +182,9 @@ cajaEncabezado2.style="text-align:center;"
                //creamos un div para los logos del encabezado
 let cajaEncabezado3 = document.createElement("div");
 //agregamos caracteristicas de clase al div
-cajaEncabezado3.className="col-sm-4";
+cajaEncabezado3.className="flex-container col-sm-4";
 //agregamos caracteristicas de estilo al div
-cajaEncabezado3.style="text-align:center;"
+cajaEncabezado3.style="display: flex; justify-content: center; align-items: center;"
 //añadimos al div contenedor el div del encabezado
 cajaEncabezadoContenedor.appendChild(cajaEncabezado3);
 
