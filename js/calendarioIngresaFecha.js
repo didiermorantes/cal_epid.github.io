@@ -166,7 +166,7 @@ let tabla_general = document.createElement("table");
 
                /* CREAMOS UN ELEMENTO DE IMAGEN */
                let imagen = document.createElement("img");
-               imagen.src="../img/logo-ins_blanco_negro_125.jpg";
+               imagen.src="img/logo-ins_blanco_negro_125.jpg";
                mes.appendChild(imagen);
 
 
