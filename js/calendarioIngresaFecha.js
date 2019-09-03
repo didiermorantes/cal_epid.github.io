@@ -153,7 +153,7 @@ let tabla_general = document.createElement("table");
    // mes.appendChild(tabla_mes);
 
             //unimos a la tabla general la tabla de cada mes generado (SI SE QUIERE DESCARGAR EL EXCEL PERO NO VISUALIZAR BIEN)
-            //tabla_general.appendChild(tabla_mes);
+            tabla_general.appendChild(tabla_mes);
            //unimos a cada div la tabla de cada mes generado (SI SE QUIERE VISUALIZAR BIEN PERO NO GENERAR EXCEL)
            mes.appendChild(tabla_mes);
 
@@ -190,97 +190,6 @@ let tabla_general = document.createElement("table");
 }
 
 
-function estructurarTablaExcel() {
-
-
-  //invocamos el año ingresado por caja de texto 
-  var anoStorage = localStorage.ano;
-  
-  
-  
-  
-  let tituloCalendario = document.createElement("div");
-  
-  
-  tituloCalendario.className="tituloAno style='width:100%; height:auto;'";
-  /* año del calendario a mano izquierda
-  tituloCalendario.innerText = anoStorage ;
-  */
-  document.body.appendChild(tituloCalendario);
-  
-  //generamos un contenedor genérico para almacenar cada subtabla que se generará con el ciclo for
-  
-  let tabla_general = document.createElement("table");
-      //el nombre general de la tabla
-      tabla_general.id="calendario_epidemiologico";
-      tabla_general.className="tabla_general";
-    //añadimos al body la tabla recien creada
-      document.body.appendChild(tabla_general);
-  
-          //Título Tabla General. Le colocamos como titulo el año procesado
-          let tituloTablaGeneral = document.createElement("caption");
-          tituloTablaGeneral.className = "titulo";
-          tituloTablaGeneral.innerText = anoStorage;
-          tabla_general.appendChild(tituloTablaGeneral);
-  
-  
-    for (m = 0; m <= 11; m++) {
-  //Se genera una tabla por cada més
-  
-      //Mes
-      let mes = document.createElement("div");
-      mes.className = "mes col-sm-6";
-      mes.style="height:auto; background-image: url(img/logo-ins_blanco_negro_125.jpg); background-repeat: no-repeat;  background-position: center; position: relative;";
-      document.body.appendChild(mes);
-      //Tabla
-      let tabla_mes = document.createElement("table");
-  
-      //el nombre de la tabla variará , pues cada tabla generada se corresponde con un mes
-      var nombreTabla = "calendario_epidemiologico";
-      //el id de cada tabla será el nombre genérico otorgado a la tabla, concatenado con la variación de m que controla el for
-      //así la tabla calendario_epidemiologico0 será enero, calendario_epidemiologico1 será febrero, y así sucesivamente
-      tabla_mes.id=nombreTabla.concat(m);
-      tabla_mes.className = "tabla_mes table table-bordered table-condensed";
-  
-          //unimos la tabla generada al div (SI SE QUIERE VISUALIZAR BIEN PERO NO DESCARGAR EN EXCEL)
-     // mes.appendChild(tabla_mes);
-  
-              //unimos a la tabla general la tabla de cada mes generado (SI SE QUIERE DESCARGAR EL EXCEL PERO NO VISUALIZAR BIEN)
-              tabla_general.appendChild(tabla_mes);
-             //unimos a la tabla general al div de cada mes generado (SI SE QUIERE VISUALIZAR BIEN PERO NO GENERAR EXCEL)
-            // mes.appendChild(tabla_mes);
-  
-      //Título
-      let titulo = document.createElement("caption");
-      titulo.className = "titulo";
-      titulo.innerText = mes_text[m];
-      tabla_mes.appendChild(titulo);
-      //Cabecera
-      let cabecera = document.createElement("thead");
-      tabla_mes.appendChild(cabecera);
-      let fila = document.createElement("tr");
-      cabecera.appendChild(fila);
-  //Titulos de los dias de la semana- Hasta 9 porque incluimos semana y periodo
-      for (d = 0; d < 9; d++) {
-        let dia = document.createElement("th");
-        dia.innerText = dia_text[d];
-        fila.appendChild(dia);
-      }//fin dia
-      //Cuerpo
-      let cuerpo = document.createElement("tbody");
-      tabla_mes.appendChild(cuerpo);
-      for (f = 0; f < 6; f++) {
-        let fila = document.createElement("tr");
-        cuerpo.appendChild(fila);
-        //pintamos hasta 9 cada td para mostrar semana y periodo
-        for (d = 0; d < 9; d++) {
-          let dia = document.createElement("td");
-          dia.innerText = "";
-          fila.appendChild(dia);
-        }     
-      }    
-    }//fin mes
-  }
 
 numerar();
 
