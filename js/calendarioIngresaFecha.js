@@ -169,6 +169,11 @@ let tabla_general = document.createElement("table");
                imagen.src="/img/logo-ins_blanco_negro_125.jpg";
                mes.appendChild(imagen);
                */
+              /*CREAMOS UN TEXTO PARA QUE SALGA EL FONDO*/
+              let texto = document.createElement("p");
+              texto.innerText=".";
+              mes.appendChild(texto);
+
 
 
         //unimos la tabla generada al div (SI SE QUIERE VISUALIZAR BIEN PERO NO DESCARGAR EN EXCEL)
