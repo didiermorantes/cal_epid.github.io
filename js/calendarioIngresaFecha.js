@@ -103,22 +103,6 @@ function estructurar() {
 //invocamos el año ingresado por caja de texto 
 var anoStorage = localStorage.ano;
 
-//creamos un div para los logos del encabezado
-let cajaEncabezado = document.createElement("div");
-//agregamos caracteristicas de clase al div
-cajaEncabezado.className="cajaEncabezado col-sm-3";
-//añadimos al body el div
-document.body.appendChild(cajaEncabezado);
-
-
-               /* CREAMOS UN ELEMENTO DE IMAGEN PARA EL ENCABEZADO */
-               let imagenEncabezado1 = document.createElement("img");
-               //establecemos la ruta de la imagen
-               imagenEncabezado1.src="img/logo-ins_blanco_negro_125.jpg";
-               //establecemos la clase de la imagen
-               imagenEncabezado1.className="img-fluid";
-               //agregamos la imagen al encabezado
-               cajaEncabezado.appendChild(imagenEncabezado1);
                
 
 
@@ -139,6 +123,45 @@ document.body.appendChild(tituloCalendario);
     div_general.className="div_general";
       //añadimos al body el recien creado
       document.body.appendChild(div_general);
+
+
+
+
+      
+//creamos un div para los logos del encabezado
+let cajaEncabezado = document.createElement("div");
+//agregamos caracteristicas de clase al div
+cajaEncabezado.className="cajaEncabezado col-sm-4";
+//añadimos al div general el div del encabezado
+div_general.appendChild(cajaEncabezado);
+
+
+               /* CREAMOS UN ELEMENTO DE IMAGEN PARA EL ENCABEZADO */
+               let imagenEncabezado1 = document.createElement("img");
+               //establecemos la ruta de la imagen
+               imagenEncabezado1.src="img/logo_ins_200px.png";
+               //establecemos la clase de la imagen
+               imagenEncabezado1.className="img-fluid";
+               //agregamos la imagen al encabezado
+               cajaEncabezado.appendChild(imagenEncabezado1);
+
+
+               //creamos un div para los logos del encabezado
+let cajaEncabezado2 = document.createElement("div");
+//agregamos caracteristicas de clase al div
+cajaEncabezado2.className="cajaEncabezado col-sm-4";
+//añadimos al div general el div del encabezado
+div_general.appendChild(cajaEncabezado2);
+
+                              /* CREAMOS UN ELEMENTO DE IMAGEN PARA EL ENCABEZADO */
+                              let imagenEncabezado2 = document.createElement("img");
+                              //establecemos la ruta de la imagen
+                              imagenEncabezado2.src="img/logo-gobierno-minsalud.png";
+                              //establecemos la clase de la imagen
+                              imagenEncabezado2.className="img-fluid";
+                              //agregamos la imagen al encabezado
+                              cajaEncabezado2.appendChild(imagenEncabezado2);
+
 
 
 //generamos un contenedor genérico para almacenar cada subtabla que se generará con el ciclo for
