@@ -150,7 +150,7 @@ let tabla_general = document.createElement("table");
     //Mes
     let mes = document.createElement("div");
     mes.className = "mes col-sm-6";
-    mes.style="height:auto;background-color:lightblue; background-image: url('img/logo-ins_blanco_negro_125.jpg'); background-repeat: no-repeat;  background-position: left center; position: relative;";
+    mes.style="height:auto;background-color:lightblue; background-image: url('/img/logo-ins_blanco_negro_125.jpg'); background-repeat: no-repeat;  background-position: left center; position: relative;";
     document.body.appendChild(mes);
     //Tabla
     let tabla_mes = document.createElement("table");
@@ -164,10 +164,11 @@ let tabla_general = document.createElement("table");
 
 
 
-               /* CREAMOS UN ELEMENTO DE IMAGEN */
+               /* CREAMOS UN ELEMENTO DE IMAGEN 
                let imagen = document.createElement("img");
                imagen.src="/img/logo-ins_blanco_negro_125.jpg";
                mes.appendChild(imagen);
+               */
 
 
         //unimos la tabla generada al div (SI SE QUIERE VISUALIZAR BIEN PERO NO DESCARGAR EN EXCEL)
