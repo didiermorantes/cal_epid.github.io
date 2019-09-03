@@ -2599,8 +2599,7 @@ function es_bisiesto(year){
 //función para exortar tabla a excel
 
 function exportTableToExcel(tableID, filename = ''){
-  estructurarTablaExcel();
-  numerar();
+
   var downloadLink;
   var dataType = 'application/vnd.ms-excel';
   var tableSelect = document.getElementById(tableID);
