@@ -164,11 +164,12 @@ let tabla_general = document.createElement("table");
 
 
 
-               /* CREAMOS UN ELEMENTO DE IMAGEN */
+               /* CREAMOS UN ELEMENTO DE IMAGEN 
                let imagen = document.createElement("img");
                imagen.src="/img/logo-ins_blanco_negro_125.jpg";
                imagen.style="opacity: 0.1; filter: alpha(opacity=10);";
                mes.appendChild(imagen);
+               */
                
               /*CREAMOS UN TEXTO PARA QUE SALGA EL FONDO
               let texto = document.createElement("p");
