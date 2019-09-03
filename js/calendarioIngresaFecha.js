@@ -115,6 +115,14 @@ tituloCalendario.innerText = anoStorage ;
 */
 document.body.appendChild(tituloCalendario);
 
+     //¿CREAMOS DIV GENERAL?
+     let div_general = document.createElement("div");
+    div_general.id="div_calendario_epidemiologico";
+    div_general.className="div_general";
+      //añadimos al body el recien creado
+      document.body.appendChild(div_general);
+
+
 //generamos un contenedor genérico para almacenar cada subtabla que se generará con el ciclo for
 
 let tabla_general = document.createElement("table");
@@ -124,12 +132,17 @@ let tabla_general = document.createElement("table");
   //añadimos al body la tabla recien creada
     document.body.appendChild(tabla_general);
 
+
         //Título Tabla General. Le colocamos como titulo el año procesado
         let tituloTablaGeneral = document.createElement("caption");
         tituloTablaGeneral.className = "titulo";
         tituloTablaGeneral.innerText = anoStorage;
         tabla_general.appendChild(tituloTablaGeneral);
 
+
+
+//AGREGAMOS AL DIV GENERAL LA TABLA GENERAL??
+div_general.appendChild(tabla_general);
 
   for (m = 0; m <= 11; m++) {
 //Se genera una tabla por cada més
@@ -153,7 +166,7 @@ let tabla_general = document.createElement("table");
    // mes.appendChild(tabla_mes);
 
             //unimos a la tabla general la tabla de cada mes generado (SI SE QUIERE DESCARGAR EL EXCEL PERO NO VISUALIZAR BIEN)
-            tabla_general.appendChild(tabla_mes);
+            //tabla_general.appendChild(tabla_mes);
            //unimos a cada div la tabla de cada mes generado (SI SE QUIERE VISUALIZAR BIEN PERO NO GENERAR EXCEL)
            mes.appendChild(tabla_mes);
 

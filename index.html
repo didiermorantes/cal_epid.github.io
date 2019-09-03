@@ -289,7 +289,9 @@
 <script>
     $(function () {
       $('#download_pdf').click(function () {
-        var element = document.getElementById('calendario_epidemiologico');
+        //descomentar si se va a imprimir desde tabla general calendarioIngresaFecha.js linea 120
+        //var element = document.getElementById('calendario_epidemiologico');
+         var element = document.getElementById('div_calendario_epidemiologico'); //imprimimos lo que tenga el div general
           var opt = {
             //margin:       1,
             filename:     'calendarioEpidemiologicoINS.pdf',
