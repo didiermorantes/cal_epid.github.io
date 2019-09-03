@@ -126,14 +126,21 @@ document.body.appendChild(tituloCalendario);
 
 
 
+//creamos div container para los logos
+let cajaEncabezadoContenedor = document.createElement("div");
+//agregamos caracteristicas de clase al div
+cajaEncabezadoContenedor.className="row";
+//añadimos al div general el div container
+div_general.appendChild(cajaEncabezadoContenedor);
+
 
       
 //creamos un div para los logos del encabezado
-let cajaEncabezado = document.createElement("div");
+let cajaEncabezado1 = document.createElement("div");
 //agregamos caracteristicas de clase al div
-cajaEncabezado.className="cajaEncabezado col-sm-4";
-//añadimos al div general el div del encabezado
-div_general.appendChild(cajaEncabezado);
+cajaEncabezado1.className="col-sm-4";
+//añadimos al div contenedor el div del encabezado
+cajaEncabezadoContenedor.appendChild(cajaEncabezado1);
 
 
                /* CREAMOS UN ELEMENTO DE IMAGEN PARA EL ENCABEZADO */
@@ -143,15 +150,15 @@ div_general.appendChild(cajaEncabezado);
                //establecemos la clase de la imagen
                imagenEncabezado1.className="img-fluid";
                //agregamos la imagen al encabezado
-               cajaEncabezado.appendChild(imagenEncabezado1);
+               cajaEncabezado1.appendChild(imagenEncabezado1);
 
 
                //creamos un div para los logos del encabezado
 let cajaEncabezado2 = document.createElement("div");
 //agregamos caracteristicas de clase al div
-cajaEncabezado2.className="cajaEncabezado col-sm-4";
-//añadimos al div general el div del encabezado
-div_general.appendChild(cajaEncabezado2);
+cajaEncabezado2.className="col-sm-4";
+//añadimos al div contenedor el div del encabezado
+cajaEncabezadoContenedor.appendChild(cajaEncabezado2);
 
                               /* CREAMOS UN ELEMENTO DE IMAGEN PARA EL ENCABEZADO */
                               let imagenEncabezado2 = document.createElement("img");
