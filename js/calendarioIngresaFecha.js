@@ -118,7 +118,7 @@ document.body.appendChild(cajaEncabezado);
                //establecemos la clase de la imagen
                imagenEncabezado1.className="img-fluid";
                //agregamos la imagen al encabezado
-               cajaEncabezado.appendChild(imagenEncabezado1.src);
+               cajaEncabezado.appendChild(imagenEncabezado1);
                
 
 
