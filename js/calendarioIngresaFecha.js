@@ -169,7 +169,7 @@ cajaEncabezado2.style="display: flex; justify-content: center; align-items: cent
    
                                  /* CREAMOS UN ELEMENTO DE TEXTO */
 
-                                 let texto2 = document.createElement("p");
+                                 let texto2 = document.createElement("h2");
                                  //Establecemos el texto interno del parrafo
                                  texto2.innerText="Calendario Epidemiológico Instituto Nacional de Salud";
                                  //agregamos el texto al encabezado
@@ -298,6 +298,36 @@ let tabla_general = document.createElement("table");
       }     
     }    
   }//fin mes
+
+
+//creamos div container para los logos
+let cajaPieContenedor = document.createElement("div");
+//agregamos caracteristicas de clase al div
+cajaPieContenedor.className="row";
+
+//añadimos al div general el div container
+div_general.appendChild(cajaPieContenedor);
+
+  //creamos un div para los logos del pie
+let cajaPie1 = document.createElement("div");
+//agregamos caracteristicas de clase al div
+cajaPie1.className="flex-container col-sm-12";
+//agregamos caracteristicas de estilo al div
+cajaPie1.style="display: flex; justify-content: center; align-items: center;"
+//añadimos al div contenedor el div del encabezado
+cajaPieContenedor.appendChild(cajaPie1);
+
+
+               /* CREAMOS UN ELEMENTO DE IMAGEN PARA EL ENCABEZADO */
+               let imagenPie1 = document.createElement("img");
+               //establecemos la ruta de la imagen
+               imagenPie1.src="img/Presidencia-logo.png";
+               //establecemos la clase de la imagen
+               imagenPie1.className="img-fluid";
+               //agregamos dimensiones de la imagen
+               //imagenPie1.style="height:130px";
+               //agregamos la imagen al encabezado
+               cajaPie1.appendChild(imagenPie1);
 }
 
 
