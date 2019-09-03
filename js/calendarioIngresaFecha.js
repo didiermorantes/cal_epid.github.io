@@ -146,28 +146,47 @@ cajaEncabezadoContenedor.appendChild(cajaEncabezado1);
                /* CREAMOS UN ELEMENTO DE IMAGEN PARA EL ENCABEZADO */
                let imagenEncabezado1 = document.createElement("img");
                //establecemos la ruta de la imagen
-               imagenEncabezado1.src="img/logo_ins_200px.png";
+               imagenEncabezado1.src="img/logo-ins.png";
                //establecemos la clase de la imagen
                imagenEncabezado1.className="img-fluid";
                //agregamos la imagen al encabezado
                cajaEncabezado1.appendChild(imagenEncabezado1);
 
 
+   //creamos un div para los logos del encabezado
+   let cajaEncabezado2 = document.createElement("div");
+   //agregamos caracteristicas de clase al div
+   cajaEncabezado2.className="col-sm-4";
+   //añadimos al div contenedor el div del encabezado
+   cajaEncabezadoContenedor.appendChild(cajaEncabezado2);
+   
+                                 /* CREAMOS UN ELEMENTO DE TEXTO */
+
+                                 let texto2 = document.createElement("p");
+                                 //Establecemos el texto interno del parrafo
+                                 texto2.innerText="Calendario Epidemiológico Instituto Nacional de Salud";
+                                 //agregamos el texto al encabezado
+                                 cajaEncabezado2.appendChild(texto2);
+
+
+
+
+
                //creamos un div para los logos del encabezado
-let cajaEncabezado2 = document.createElement("div");
+let cajaEncabezado3 = document.createElement("div");
 //agregamos caracteristicas de clase al div
-cajaEncabezado2.className="col-sm-4";
+cajaEncabezado3.className="col-sm-4";
 //añadimos al div contenedor el div del encabezado
-cajaEncabezadoContenedor.appendChild(cajaEncabezado2);
+cajaEncabezadoContenedor.appendChild(cajaEncabezado3);
 
                               /* CREAMOS UN ELEMENTO DE IMAGEN PARA EL ENCABEZADO */
-                              let imagenEncabezado2 = document.createElement("img");
+                              let imagenEncabezado3 = document.createElement("img");
                               //establecemos la ruta de la imagen
-                              imagenEncabezado2.src="img/logo-gobierno-minsalud.png";
+                              imagenEncabezado3.src="img/logo-gobierno-minsalud.png";
                               //establecemos la clase de la imagen
-                              imagenEncabezado2.className="img-fluid";
+                              imagenEncabezado3.className="img-fluid";
                               //agregamos la imagen al encabezado
-                              cajaEncabezado2.appendChild(imagenEncabezado2);
+                              cajaEncabezado3.appendChild(imagenEncabezado3);
 
 
 
