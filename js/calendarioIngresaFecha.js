@@ -103,6 +103,24 @@ function estructurar() {
 //invocamos el año ingresado por caja de texto 
 var anoStorage = localStorage.ano;
 
+//creamos un div para los logos del encabezado
+let cajaEncabezado = document.createElement("div");
+//agregamos caracteristicas de clase al div
+cajaEncabezado.className="cajaEncabezado col-sm-3";
+//añadimos al body el div
+document.body.apppendChild(cajaEncabezado);
+
+
+               /* CREAMOS UN ELEMENTO DE IMAGEN PARA EL ENCABEZADO */
+               let imagenEncabezado1 = document.createElement("img");
+               //establecemos la ruta de la imagen
+               imagenEncabezado1.src="img/logo-ins_blanco_negro_125.jpg";
+               //establecemos la clase de la imagen
+               imagenEncabezado1.className="img-fluid";
+               //agregamos la imagen al encabezado
+               cajaEncabezado.appendChild(imagenEncabezado1.src);
+               
+
 
 
 
