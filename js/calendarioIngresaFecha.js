@@ -162,6 +162,14 @@ let tabla_general = document.createElement("table");
     tabla_mes.id=nombreTabla.concat(m);
     tabla_mes.className = "tabla_mes table table-bordered table-condensed";
 
+
+
+               /* CREAMOS UN ELEMENTO DE IMAGEN */
+               let imagen = document.createElement("img");
+               imagen.src="../img/logo-ins_blanco_negro_125.jpg";
+               mes.appendChild(imagen);
+
+
         //unimos la tabla generada al div (SI SE QUIERE VISUALIZAR BIEN PERO NO DESCARGAR EN EXCEL)
    // mes.appendChild(tabla_mes);
 
@@ -169,8 +177,12 @@ let tabla_general = document.createElement("table");
             //tabla_general.appendChild(tabla_mes);
            //unimos a cada div la tabla de cada mes generado (SI SE QUIERE VISUALIZAR BIEN PERO NO GENERAR EXCEL)
            mes.appendChild(tabla_mes);
-
+            //agregamos el div mes a la tabla general
            div_general.appendChild(mes);
+
+
+           
+          
 
     //Título
     let titulo = document.createElement("caption");
