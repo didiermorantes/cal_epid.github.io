@@ -224,6 +224,15 @@ let tabla_general = document.createElement("table");
   for (m = 0; m <= 11; m++) {
 //Se genera una tabla por cada més
 
+//creamos saltos para organizar el pdf
+let salto = document.createElement("br");
+document.body.appendChild(salto);
+document.body.appendChild(salto);
+document.body.appendChild(salto);
+document.body.appendChild(salto);
+document.body.appendChild(salto);
+document.body.appendChild(salto);
+
     //Mes
     let mes = document.createElement("div");
     mes.className = "mes col-sm-6";
