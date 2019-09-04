@@ -1,4 +1,4 @@
-var mes_text = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var mes_text = ["Vacio","Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
 var dia_text = ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab","Sem","Per"];
 
@@ -221,7 +221,7 @@ let tabla_general = document.createElement("table");
 //AGREGAMOS AL DIV GENERAL LA TABLA GENERAL??
 //div_general.appendChild(tabla_general);
 
-  for (m = 0; m <= 11; m++) {
+  for (m = 1; m <= 12; m++) {
 //Se genera una tabla por cada més
 
 
