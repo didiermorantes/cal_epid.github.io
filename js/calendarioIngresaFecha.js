@@ -224,12 +224,41 @@ let tabla_general = document.createElement("table");
   for (m = 1; m <= 12; m++) {
 //Se genera una tabla por cada més
 
+if(m==8){ //solo para el mes 8
+  //creamos saltos para organizar el pdf 
+  //los agregamos al div mes
+  let salto1 = document.createElement("br");
+  let salto2 = document.createElement("br");
+  let salto3 = document.createElement("br");
+  let salto4 = document.createElement("br");
+  let salto5 = document.createElement("br");
+  let salto6 = document.createElement("br");
+  let salto7 = document.createElement("br");
+  //Agregamos los saltos al div general para no alterar las tablas
+  mes.appendChild(salto1);
+  mes.appendChild(salto2);
+  mes.appendChild(salto3);
+  mes.appendChild(salto4);
+  mes.appendChild(salto5);
+  mes.appendChild(salto6);
+  mes.appendChild(salto7);
+
+  
+  
+    }
 
 
     //Mes
     let mes = document.createElement("div");
     mes.className = "mes col-sm-6";
-    mes.style="height:auto; background-image: url('img/logo_ins_trans_200px_2.png'); background-repeat: no-repeat;  background-position:right center; position: relative;";
+    if(m==8){
+      mes.style="height:auto; background-image: url('img/logo_ins_trans_200px_2.png'); background-repeat: no-repeat;  background-position:right top; position: relative;";
+
+    }else{
+      mes.style="height:auto; background-image: url('img/logo_ins_trans_200px_2.png'); background-repeat: no-repeat;  background-position:right center; position: relative;";
+
+    }
+
     document.body.appendChild(mes);
 
 
@@ -312,21 +341,7 @@ let tabla_general = document.createElement("table");
     } 
     
    
-    if(m==8){ //solo para el mes 8
-      //creamos saltos para organizar el pdf 
-      //los agregamos al div mes
-      let salto1 = document.createElement("br");
-      let salto2 = document.createElement("br");
-      let salto3 = document.createElement("br");
-      let salto4 = document.createElement("br");
-      //Agregamos los saltos al div general para no alterar las tablas
-      mes.appendChild(salto1);
-      mes.appendChild(salto2);
-      mes.appendChild(salto3);
-      mes.appendChild(salto4);
-      
-      
-        }
+
 
 
   }//fin mes
