@@ -282,7 +282,17 @@ mes.appendChild(salto3);
             //agregamos el div mes a la tabla general
            div_general.appendChild(mes);
 
+if(m == 5){
+//creamos saltos para organizar el pdf
+//los agregamos al div mes
+let salto4 = document.createElement("br");
+let salto5 = document.createElement("br");
+let salto6 = document.createElement("br");
+mes.appendChild(salto4);
+mes.appendChild(salto5);
+mes.appendChild(salto6);
 
+}
            
           
 
