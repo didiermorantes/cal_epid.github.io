@@ -224,20 +224,29 @@ let tabla_general = document.createElement("table");
   for (m = 0; m <= 11; m++) {
 //Se genera una tabla por cada més
 
-//creamos saltos para organizar el pdf
-let salto = document.createElement("br");
-document.body.appendChild(salto);
-document.body.appendChild(salto);
-document.body.appendChild(salto);
-document.body.appendChild(salto);
-document.body.appendChild(salto);
-document.body.appendChild(salto);
+
 
     //Mes
     let mes = document.createElement("div");
     mes.className = "mes col-sm-6";
     mes.style="height:auto; background-image: url('img/logo_ins_trans_200px_2.png'); background-repeat: no-repeat;  background-position:right center; position: relative;";
     document.body.appendChild(mes);
+
+
+
+//creamos saltos para organizar el pdf
+//los agregamos al div mes
+let salto = document.createElement("br");
+mes.appendChild(salto);
+mes.appendChild(salto);
+mes.appendChild(salto);
+mes.appendChild(salto);
+mes.appendChild(salto);
+mes.appendChild(salto);
+
+
+
+
     //Tabla
     let tabla_mes = document.createElement("table");
 
