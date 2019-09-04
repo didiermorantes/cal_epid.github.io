@@ -236,13 +236,12 @@ let tabla_general = document.createElement("table");
 
 //creamos saltos para organizar el pdf
 //los agregamos al div mes
-let salto = document.createElement("br");
-mes.appendChild(salto);
-mes.appendChild(salto);
-mes.appendChild(salto);
-mes.appendChild(salto);
-mes.appendChild(salto);
-mes.appendChild(salto);
+let salto1 = document.createElement("br");
+let salto2 = document.createElement("br");
+let salto3 = document.createElement("br");
+mes.appendChild(salto1);
+mes.appendChild(salto2);
+mes.appendChild(salto3);
 
 
 
