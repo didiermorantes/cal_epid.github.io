@@ -273,6 +273,30 @@ let tabla_general = document.createElement("table");
            div_general.appendChild(mes);
 
 if(m % 3 == 0 ){
+
+          if(m==3){ //solo para los primeros tres meses
+        //creamos saltos para organizar el pdf cada tres meses
+        //los agregamos al div mes
+        let salto1 = document.createElement("br");
+        let salto2 = document.createElement("br");
+        let salto3 = document.createElement("br");
+        let salto4 = document.createElement("br");
+        let salto5 = document.createElement("br");
+        let salto6 = document.createElement("br");
+        let salto7 = document.createElement("br");
+        let salto8 = document.createElement("br");
+        let salto9 = document.createElement("br");
+        mes.appendChild(salto1);
+        mes.appendChild(salto2);
+        mes.appendChild(salto3);
+        mes.appendChild(salto4);
+        mes.appendChild(salto5);
+        mes.appendChild(salto6);
+        mes.appendChild(salto7);
+        mes.appendChild(salto8);
+        mes.appendChild(salto9);
+
+          }
 //creamos saltos para organizar el pdf cada tres meses
 //los agregamos al div mes
 let salto1 = document.createElement("br");
@@ -281,12 +305,24 @@ let salto3 = document.createElement("br");
 let salto4 = document.createElement("br");
 let salto5 = document.createElement("br");
 let salto6 = document.createElement("br");
+let salto7 = document.createElement("br");
+let salto8 = document.createElement("br");
+let salto9 = document.createElement("br");
+let salto10 = document.createElement("br");
+let salto11 = document.createElement("br");
+let salto12 = document.createElement("br");
 mes.appendChild(salto1);
 mes.appendChild(salto2);
 mes.appendChild(salto3);
 mes.appendChild(salto4);
 mes.appendChild(salto5);
 mes.appendChild(salto6);
+mes.appendChild(salto7);
+mes.appendChild(salto8);
+mes.appendChild(salto9);
+mes.appendChild(salto10);
+mes.appendChild(salto11;
+mes.appendChild(salto12);
 
 }
            
