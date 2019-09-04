@@ -135,11 +135,21 @@ cajaEncabezadoContenedor.className="row";
 div_general.appendChild(cajaEncabezadoContenedor);
 
 
-      
+//div de relleno
+let cajaEncabezadoRelleno1 = document.createElement("div");
+//agregamos caracteristicas de clase al div
+cajaEncabezadoRelleno1.className="flex-container col-sm";
+//agregamos caracteristicas de estilo al div
+cajaEncabezadoRelleno1.style="display: flex; justify-content: center; align-items: center;"
+  //añadimos al div contenedor el div del encabezado
+cajaEncabezadoContenedor.appendChild(cajaEncabezadoRelleno1);    
+
+
+
 //creamos un div para los logos del encabezado
 let cajaEncabezado1 = document.createElement("div");
 //agregamos caracteristicas de clase al div
-cajaEncabezado1.className="flex-container col-sm-4";
+cajaEncabezado1.className="flex-container col-sm-3";
 //agregamos caracteristicas de estilo al div
 cajaEncabezado1.style="display: flex; justify-content: center; align-items: center;"
 //añadimos al div contenedor el div del encabezado
@@ -183,7 +193,7 @@ cajaEncabezado2.style="display: flex; justify-content: center; align-items: cent
                //creamos un div para los logos del encabezado
 let cajaEncabezado3 = document.createElement("div");
 //agregamos caracteristicas de clase al div
-cajaEncabezado3.className="flex-container col-sm-4";
+cajaEncabezado3.className="flex-container col-sm-3";
 //agregamos caracteristicas de estilo al div
 cajaEncabezado3.style="display: flex; justify-content: center; align-items: center;"
 //añadimos al div contenedor el div del encabezado
@@ -197,6 +207,18 @@ cajaEncabezadoContenedor.appendChild(cajaEncabezado3);
                               imagenEncabezado3.className="img-fluid";
                               //agregamos la imagen al encabezado
                               cajaEncabezado3.appendChild(imagenEncabezado3);
+
+
+
+//div de relleno
+let cajaEncabezadoRelleno2 = document.createElement("div");
+//agregamos caracteristicas de clase al div
+cajaEncabezadoRelleno2.className="flex-container col-sm";
+//agregamos caracteristicas de estilo al div
+cajaEncabezadoRelleno2.style="display: flex; justify-content: center; align-items: center;"
+  //añadimos al div contenedor el div del encabezado
+cajaEncabezadoContenedor.appendChild(cajaEncabezadoRelleno2);    
+
 
 
 
