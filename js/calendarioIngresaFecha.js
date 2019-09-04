@@ -275,11 +275,18 @@ let tabla_general = document.createElement("table");
 if(m % 3 == 0 ){
 //creamos saltos para organizar el pdf cada tres meses
 //los agregamos al div mes
-    for(s=0;s<6;s++){ //creamos 6 saltos
-      let salto.s = document.createElement("br");
-      mes.appendChild(salto.s);
-    }//fin for
-
+let salto1 = document.createElement("br");
+let salto2 = document.createElement("br");
+let salto3 = document.createElement("br");
+let salto4 = document.createElement("br");
+let salto5 = document.createElement("br");
+let salto6 = document.createElement("br");
+mes.appendChild(salto1);
+mes.appendChild(salto2);
+mes.appendChild(salto3);
+mes.appendChild(salto4);
+mes.appendChild(salto5);
+mes.appendChild(salto6);
 
 }
            
