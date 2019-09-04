@@ -321,7 +321,7 @@ mes.appendChild(salto7);
 mes.appendChild(salto8);
 mes.appendChild(salto9);
 mes.appendChild(salto10);
-mes.appendChild(salto11;
+mes.appendChild(salto11);
 mes.appendChild(salto12);
 
 }
