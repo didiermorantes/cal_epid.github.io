@@ -231,7 +231,7 @@ let tabla_general = document.createElement("table");
     let mes = document.createElement("div");
     mes.className = "mes col-sm-6";
     if(m==8){
-      mes.style="height:auto; background-image: url('img/logo_ins_trans_200px_2.png'); background-repeat: no-repeat;  background-position:right top; position: relative;";
+      mes.style="height:auto; background-image: url('img/logo_ins_trans_200px_2.png'); background-repeat: no-repeat;  background-position:right bottom; position: relative;";
 
     }else{
       mes.style="height:auto; background-image: url('img/logo_ins_trans_200px_2.png'); background-repeat: no-repeat;  background-position:right center; position: relative;";
@@ -239,33 +239,9 @@ let tabla_general = document.createElement("table");
     }
 
     document.body.appendChild(mes);
-    
-
-    if(m==8){ //solo para el mes 8
-      //creamos saltos para organizar el pdf 
-      //los agregamos al div mes
-      let salto1 = document.createElement("br");
-      let salto2 = document.createElement("br");
-      let salto3 = document.createElement("br");
-      let salto4 = document.createElement("br");
-      let salto5 = document.createElement("br");
-      let salto6 = document.createElement("br");
-      let salto7 = document.createElement("br");
-      //Agregamos los saltos al div general para no alterar las tablas
-      mes.appendChild(salto1);
-      mes.appendChild(salto2);
-      mes.appendChild(salto3);
-      mes.appendChild(salto4);
-      mes.appendChild(salto5);
-      mes.appendChild(salto6);
-      mes.appendChild(salto7);
-    
-      
-      
-        }
 
 
-
+   
 
 
     //Tabla
@@ -342,6 +318,27 @@ let tabla_general = document.createElement("table");
     } 
     
    
+    if(m==8){ //solo para el mes 8
+      //creamos saltos para organizar el pdf 
+      //los agregamos al div mes
+      let salto1 = document.createElement("br");
+      let salto2 = document.createElement("br");
+      let salto3 = document.createElement("br");
+      let salto4 = document.createElement("br");
+      let salto5 = document.createElement("br");
+      let salto6 = document.createElement("br");
+      //Agregamos los saltos al div general para no alterar las tablas
+      mes.appendChild(salto1);
+      mes.appendChild(salto2);
+      mes.appendChild(salto3);
+      mes.appendChild(salto4);
+      mes.appendChild(salto5);
+      mes.appendChild(salto6);
+    
+      
+      
+        }
+
 
 
 
