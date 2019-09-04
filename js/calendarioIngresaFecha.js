@@ -318,10 +318,12 @@ let tabla_general = document.createElement("table");
       let salto1 = document.createElement("br");
       let salto2 = document.createElement("br");
       let salto3 = document.createElement("br");
+      let salto4 = document.createElement("br");
       //Agregamos los saltos al div general para no alterar las tablas
-      tabla_mes.appendChild(salto1);
-      tabla_mes.appendChild(salto2);
-      tabla_mes.appendChild(salto3);
+      mes.appendChild(salto1);
+      mes.appendChild(salto2);
+      mes.appendChild(salto3);
+      mes.appendChild(salto4);
       
       
         }
