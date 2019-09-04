@@ -231,7 +231,7 @@ let tabla_general = document.createElement("table");
     let mes = document.createElement("div");
     mes.className = "mes col-sm-6";
     if(m==8){
-      mes.style="height:auto; background-image: url('img/logo_ins_trans_200px_2.png'); background-repeat: no-repeat;  background-position:right bottom; position: relative;";
+      mes.style="height:auto; background-image: url('img/logo_ins_trans_200px_2.png'); background-repeat: no-repeat;  background-position:right top; position: relative;";
 
     }else{
       mes.style="height:auto; background-image: url('img/logo_ins_trans_200px_2.png'); background-repeat: no-repeat;  background-position:right center; position: relative;";
